@@ -158,7 +158,7 @@ if question:
         st.stop()
     if not documents:
         st.error("Upload at least one document first.")
-                st.stop()
+        st.stop()
 
     st.session_state.messages.append({"role": "user", "content": question})
     with st.chat_message("user"):
